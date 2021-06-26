@@ -38,6 +38,10 @@
         <div class="text-center">
           <img src="css/images/doge.png" class="mt-5" style="width: 300px; height: auto;">
           <h1 class="nice-font text-white">Who is the lucky doge today?</h1>
+          <p class="text-white" style="padding: 0 150px;">
+            Run a lottery and choose a winner in one click!
+             Enter the address of the contract and the application will independently download all holders of your token and choose from among them.
+          </p>
         </div>
 
         <form class="mt-5">
@@ -60,9 +64,16 @@
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Minimum balance</label>
+                      <label class="form-label">Minimum balance</label>
                       <input type="text" class="form-control" aria-describedby="minbalHelp">
                       <div id="minbalHelp" class="form-text">less than this amount will be excluded.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Algorithm</label>
+                      <select name="" id="" class="form-control">
+                        <option value="">Random [without balance influence]</option>
+                        <option value="">Random [proportional to balance]</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -70,7 +81,7 @@
             </div>
           </div>
 
-          <div class="text-center mt-5 mb-5">
+          <div class="text-center mt-5 mb-5" style="margin-top: -76px !important;">
             <button class="get-winner nice-font">Get <br> Winner!</button>
           </div>
         </form>
