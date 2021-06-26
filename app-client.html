@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LuckyDoge App MVP</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-doge">
+    <div class="container-fluid">
+      <a class="navbar-brand nice-font" href="#">LuckyDoge Lotery</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">1 LUCKY - $0.05</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search by lotery hash" aria-label="Search">
+          <button class="btn btn-outline-doge" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="text-center">
+          <img src="css/images/doge.png" class="mt-5" style="width: 300px; height: auto;">
+          <h1 class="nice-font text-white">Who is the lucky doge today?</h1>
+        </div>
+
+        <form class="mt-5">
+          <div class="form">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Contract address">
+            </div>
+  
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Advanced options
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Exclude addresses (coma separated)</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Minimum balance</label>
+                      <input type="text" class="form-control" aria-describedby="minbalHelp">
+                      <div id="minbalHelp" class="form-text">less than this amount will be excluded.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <button class="get-winner nice-font">Get <br> Winner!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/web3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/abi.js"></script>
+  <script src="js/mvp.js"></script>
+</body>
+
+</html>

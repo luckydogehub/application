@@ -1,0 +1,41 @@
+body {
+    background: radial-gradient(circle, #D38E2B 0%, #7d39b4 100%);
+}
+
+.navbar-doge {
+    background: #4A332D;
+}
+
+.navbar-doge a {
+    color: #fff;
+}
+
+.nice-font {
+    font-family: 'Righteous', cursive;
+}
+
+.btn-outline-doge {
+    color: #A77D48;
+    border-color: #A77D48;
+}
+
+.get-winner {
+    color: #fff;
+    background: #4A332D;
+    padding: 57px 30px;
+    border: 2px solid #352420;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.form {
+    border: 1px solid #4A332D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background: #A77D48;
+}
